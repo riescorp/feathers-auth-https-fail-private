@@ -1,0 +1,1 @@
+# feathers-auth-https-fail-private
