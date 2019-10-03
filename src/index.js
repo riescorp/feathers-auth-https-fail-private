@@ -24,8 +24,10 @@ if (!USE_HTTPS) {
 
   let authData = {
   // use your own keys
-    key: fs.readFileSync('/path/to/your/domain.key'),
-    cert: fs.readFileSync('/path/to/your/domain.crt')
+    // key: fs.readFileSync('/path/to/your/domain.key'),
+    // cert: fs.readFileSync('/path/to/your/domain.crt')
+    key: fs.readFileSync('/Users/nriesco/Dropbox/SMARTCOBPrivado/star.smartcob.cl.key'),
+    cert: fs.readFileSync('/Users/nriesco/Dropbox/SMARTCOBPrivado/star.smartcob.cl.crt')
   };
 
   let serverHttps = https.createServer(authData, app);
